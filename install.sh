@@ -92,3 +92,5 @@ sed -i '/^vim.cmd("MasonInstallAll")$/d' ~/.config/nvim/init.lua
 echo -e "${GREEN}-==Removing necessary files==-${NC}"
 # Remove the cloned directory
 rm -rf ../neovim-cpp
+
+echo 'vim.keymap.set("n", ";", ":", { remap = true })' >> ~/.config/nvim/init.lua
